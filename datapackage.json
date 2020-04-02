@@ -1,0 +1,58 @@
+
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "Assignment",
+      "path": "data/Pricerecord_datewise.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "date",
+            "format": "default",
+            "title": "date"
+          },
+          {
+            "name": "price",
+            "type": "integer",
+            "format": "default",
+            "title": "price"
+          }
+        ]
+      },
+      "title": "Assignment"
+    },
+     {
+      "name": "Assignment",
+      "path": "data/Pricerecord_monthwise.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "date",
+            "format": "default",
+            "title": "date"
+          },
+          {
+            "name": "price",
+            "type": "integer",
+            "format": "default",
+            "title": "price"
+          }
+        ]
+      },
+      "title": "Assignment"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Bhumika",
+      "role": "author"
+    }
+  ],
+  "title": "data package",
+  "name": "data-package"
+}
