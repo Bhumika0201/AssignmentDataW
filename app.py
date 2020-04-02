@@ -19,12 +19,11 @@ for d in pass_times:
 for x_row in data:
     datetimeobject = datetime.strptime(x_row[0],'%Y%m%d')
     newformat = datetimeobject.strftime('%d-%m-%Y')
-
-
-
     date.append(newformat)
     price.append(x_row[1])
+    
 i = 0
+
 for x_row in date:
     rows.append([x_row,price[i]])
     i = i + 1
@@ -53,7 +52,9 @@ for x_row in data_monthwise:
     newformat = datetimeobject.strftime('%d-%m-%Y')
     date_monthwise.append(newformat)
     price_monthwise.append(x_row[1])
+    
 i = 0
+
 for x_row in date_monthwise:
     rows_monthwise.append([x_row, price_monthwise[i]])
     i = i + 1
